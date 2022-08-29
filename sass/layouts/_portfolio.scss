@@ -1,0 +1,121 @@
+/* СТИЛІ ДЛЯ ПОРТФОЛІО */
+
+/* Button */
+
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.button.all {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+
+.button {
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: inline-block;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  border-radius: 4px;
+  padding: 0px 22px;
+  margin-bottom: 50px;
+  height: 38px;
+  min-width: 73px;
+  border: solid transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--primery-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Work */
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.work__list-item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.work__list-item:hover .work__list-text {
+  transform: translateY(0);
+}
+
+.work__list-actions {
+  position: relative;
+  overflow: hidden;
+}
+
+.work__list-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primery-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  height: 100%;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* .list.work:nth-child(3n) { 
+    margin-right: 0px;
+}
+
+.list.work:nth-child(-n + 3) {
+    margin-bottom: 0px;
+} */
+
+.work__title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.work__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primery-text-color);
+}
+
+.border-worklist {
+  border: 1px solid #eeeeee;
+  border-top: 0px;
+  padding: 20px 24px;
+}

@@ -1,0 +1,175 @@
+/*  -----Modal-form--------- */
+.modal__field {
+  margin-bottom: 10px;
+}
+
+.modal__checkbox-field {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modal__name-lable,
+.modal__tel-lable,
+.modal__mail-lable,
+.modal__text-lable {
+  display: block;
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal__input-wrap {
+  position: relative;
+}
+
+.modal__name-input,
+.modal__tel-input,
+.modal__mail-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: var(--accent-color);
+  padding-left: 42px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__name-icon,
+.modal__tel-icon,
+.modal__mail-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__name-input:hover,
+.modal__name-input:focus,
+.modal__tel-input:hover,
+.modal__tel-input:focus,
+.modal__mail-input:hover,
+.modal__mail-input:focus,
+.modal__text-area:hover,
+.modal__text-area:focus {
+  border-color: #2196f3;
+}
+
+.modal__name-icon:hover,
+.modal__name-icon:focus,
+.modal__tel-icon:hover,
+.modal__tel-icon:focus,
+.modal__mail-icon:hover,
+.modal__mail-icon:focus {
+  fill: var(--accent-color);
+}
+
+.modal__name-input:hover + .modal__name-icon,
+.modal__name-input:focus + .modal__name-icon,
+.modal__tel-input:hover + .modal__tel-icon,
+.modal__tel-input:focus + .modal__tel-icon,
+.modal__mail-input:hover + .modal__mail-icon,
+.modal__mail-input:focus + .modal__mail-icon {
+  fill: var(--accent-color);
+}
+
+.modal__text-area {
+  width: 448px;
+  height: 120px;
+  left: 576px;
+  top: 519px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: var(--accent-color);
+  resize: none;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal__agreement-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.modal__check-lable {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.modal__check-lable span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  margin-left: 8px;
+  margin-right: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .modal__check-input:checked + & {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.modal__check-icon {
+  fill: transparent;
+}
+
+.modal__check-input:checked + .modal__check-lable .modal__check-icon {
+  fill: #fff;
+}
+
+.modal__button-placed {
+  display: flex;
+  justify-content: center;
+}
+
+.modal__button {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  margin-top: 30px;
+}

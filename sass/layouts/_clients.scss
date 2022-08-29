@@ -1,0 +1,38 @@
+.clients__title {
+  padding-top: 0px;
+}
+.clients__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.clients__link {
+  transition-property: color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    outline-color: var(--accent-color);
+  }
+}
+
+.clients__icon {
+  fill: #afb1b8;
+  transition: inherit;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-color);
+    /* transition: inherit; */
+  }
+}

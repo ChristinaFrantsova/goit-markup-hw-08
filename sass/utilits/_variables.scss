@@ -1,0 +1,24 @@
+/* Колір основного тексту #757575  */
+/* Колір другорядного тексту #212121 */
+/* Колір частки Web лого в header #000000 */
+/* Акцент #2196F3 */
+/* Білий #FFFFFF */
+/* Колір контактів в footer rgba(255, 255, 255, 0.6); */
+
+/* Колір основного фону #FFFFFF */
+/* Колір фону Команда #F5F4FA;  */
+/* Колір фону Герой #c4c4c4  */
+/*Колір фону Футер #2F303A */
+
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-white-color: #fff;
+  --background-team-color: #f5f4fa;
+  --background-footer-color: #2f303a;
+
+  /* Fonts */
+  --main-text-font: Roboto, sans-serif;
+  --secondary-text-font: Raleway, sans-serif;
+}
