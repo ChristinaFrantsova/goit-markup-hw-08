@@ -532,7 +532,7 @@ img {
 
 /* Footer */
 
-.footer {
+/* .footer {
   background-color: var(--background-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -555,7 +555,7 @@ img {
 
 /* Adress */
 
-.adress__item {
+/* .adress__item {
   font-style: normal;
 }
 
@@ -595,11 +595,11 @@ img {
 .adress__contact.mail {
   display: block;
   margin-bottom: 9px;
-}
+} */
 
 /* --------footer social link------------- */
 
-.soc-list__title {
+/* .soc-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.23;
@@ -614,7 +614,7 @@ img {
 
 .soc-list--icon-light {
   fill: var(--primery-white-color);
-}
+} */
 /* 
 .footer-soc-link {
   transition-property: color fill;
