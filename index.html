@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
+  <body data-body>
     <!-- Хедер -->
-    <!-- <header class="header header__border">
+    <header class="header header__border">
       <div class="container header__box">
         <nav class="header__nav">
           <a href="./index.html" lang="en" class="logo logo--color-dark"
@@ -57,15 +57,80 @@
             </a>
           </li>
         </ul>
+        <!-- Burger-menu -->
+        <button type="button" class="burger__open" data-burger-open>
+          <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
-    <!--Мейн-->
+      <div class="burger is-hidden" data-burger>
+        <div class="container">
+          <button type="button" class="burger__close" data-burger-close>
+            <svg class="" width="40" height="40">
+              <use href="./images/icons.svg#burger-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <div class="burger__menu-top">
+              <ul class="burger__nav-list list" nav-list>
+                <li class="burger__nav-item">
+                  <a href="./index.html" class="burger__nav-link current"
+                    >Студія</a
+                  >
+                </li>
+                <li class="burger__nav-item">
+                  <a href="./portfolio.html" class="burger__nav-link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="burger__nav-item">
+                  <a href="" class="burger__nav-link">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="burger__menu-bottom">
+            <ul class="burger__contact list">
+              <li class="burger__contact-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="burger__contact-mail"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="burger__contact-item">
+                <a href="tel:+380961111111" class="burger__contact-tel">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="burger__soc list">
+              <li class="burger__soc-item">
+                <a href="" class="burger__soc-link">Instagram</a>
+              </li>
+              <li class="burger__soc-item">
+                <a href="" class="burger__soc-link">Twitter</a>
+              </li>
+              <li class="burger__soc-item">
+                <a href="" class="burger__soc-link">Facebook</a>
+              </li>
+              <li class="burger__soc-item">
+                <a href="" class="burger__soc-link">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Мейн -->
     <main>
       <!-- Герой -->
-      <!-- <section class="hero">
-        <div class="container hero__container"> -->
-      <!-- hero-overlay------------------->
-      <!-- <h1 class="hero__title">Ефектівні рішення для вашого бізнесу</h1>
+      <section class="hero">
+        <div class="container hero__container">
+          <!-- hero-overlay------------------->
+          <h1 class="hero__title">Ефектівні рішення для вашого бізнесу</h1>
           <button
             type="button"
             class="hero__button main-button"
@@ -74,10 +139,10 @@
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Особливості -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особливості роботи</h2>
           <ul class="feature-list list">
@@ -133,9 +198,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Приклади робіт-->
-      <!-- <section class="section example">
+      <section class="section example">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="example__list list">
@@ -174,9 +239,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Команда-->
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list team__list">
@@ -369,9 +434,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!------- Our clients ----------->
-      <!-- <section class="section clients">
+      <section class="section clients">
         <div class="container">
           <h2 class="title clients__title">Постійні клієнти</h2>
           <ul class="list clients__list">
@@ -420,91 +485,91 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- Футер-->
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer_wrap">
-        <div class="footer__adress">
-          <a
-            href="./index.html"
-            lang="en"
-            class="logo footer__logo logo--color-light"
-            >Web<span>Studio</span>
-          </a>
-          <ul class="adress list">
-            <li class="adress__item">
-              <a
-                href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="adress__link"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="adress__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="adress__contact mail list"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="adress__item">
-              <a href="tel:+380961111111" class="adress__contact tel list"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="soc-list__container">
-          <p class="soc-list__title">Приєднуйтесь</p>
-          <ul class="soc-list list">
-            <li class="">
-              <a href="" class="soc-list__link soc-list--background-dark">
-                <svg
-                  class="soc-list__icon soc-list--icon-light"
-                  width="20"
-                  height="20"
+          <div class="footer__adress">
+            <a
+              href="./index.html"
+              lang="en"
+              class="logo footer__logo logo--color-light"
+              >Web<span>Studio</span>
+            </a>
+            <ul class="adress list">
+              <li class="adress__item">
+                <a
+                  href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="adress__link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="" class="soc-list__link soc-list--background-dark">
-                <svg
-                  class="soc-list__icon soc-list--icon-light"
-                  width="20"
-                  height="20"
+              </li>
+              <li class="adress__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="adress__contact mail list"
+                  >info@devstudio.com</a
                 >
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="" class="soc-list__link soc-list--background-dark">
-                <svg
-                  class="soc-list__icon soc-list--icon-light"
-                  width="20"
-                  height="20"
+              </li>
+              <li class="adress__item">
+                <a href="tel:+380961111111" class="adress__contact tel list"
+                  >+38 096 111 11 11</a
                 >
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="">
-              <a href="" class="soc-list__link soc-list--background-dark">
-                <svg
-                  class="soc-list__icon soc-list--icon-light"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+              </li>
+            </ul>
+          </div>
+          <div class="soc-list__container">
+            <p class="soc-list__title">Приєднуйтесь</p>
+            <ul class="soc-list list">
+              <li class="">
+                <a href="" class="soc-list__link soc-list--background-dark">
+                  <svg
+                    class="soc-list__icon soc-list--icon-light"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a href="" class="soc-list__link soc-list--background-dark">
+                  <svg
+                    class="soc-list__icon soc-list--icon-light"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a href="" class="soc-list__link soc-list--background-dark">
+                  <svg
+                    class="soc-list__icon soc-list--icon-light"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="">
+                <a href="" class="soc-list__link soc-list--background-dark">
+                  <svg
+                    class="soc-list__icon soc-list--icon-light"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <form class="form">
           <div class="sing-up">
@@ -617,5 +682,6 @@
     </div>
 
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

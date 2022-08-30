@@ -4,7 +4,12 @@
 
 .button-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .button.all {
@@ -31,7 +36,7 @@
 
   border-radius: 4px;
   padding: 0px 22px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   height: 38px;
   min-width: 73px;
   border: solid transparent;
@@ -42,6 +47,14 @@
     background-color: var(--accent-color);
     box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
   }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .button-item:not(:last-child) {
@@ -51,8 +64,16 @@
 /* Work */
 .work {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .work__list-item {
@@ -64,15 +85,39 @@
   &:focus {
     box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
   }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .work__list-item:hover .work__list-text {
   transform: translateY(0);
 }
 
+.work__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
 .work__list-actions {
   position: relative;
   overflow: hidden;
+  margin-top: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .work__list-text {
@@ -118,4 +163,5 @@
   border: 1px solid #eeeeee;
   border-top: 0px;
   padding: 20px 24px;
+  flex-grow: 1;
 }
