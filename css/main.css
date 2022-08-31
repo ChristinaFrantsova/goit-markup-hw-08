@@ -469,6 +469,9 @@ body {
   background-color: var(--primery-white-color);
   cursor: pointer;
 }
+.burger__close:hover, .burger__close:focus {
+  fill: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .burger__close {
     display: none;
