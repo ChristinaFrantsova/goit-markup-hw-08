@@ -1443,8 +1443,8 @@ HEADER .header__nav {
 @media screen and (min-width: 480px) {
   .work__list-text {
     font-size: 18px;
-    line-height: 1.56;
-    padding: 63px 24px;
+    line-height: 1.55;
+    padding: 77px 24px;
   }
 }
 
