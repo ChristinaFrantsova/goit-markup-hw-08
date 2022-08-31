@@ -1057,6 +1057,12 @@ HEADER .header__nav {
     display: flex;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer_wrap {
+    align-items: baseline;
+  }
+}
+
 .footer__adress {
   display: flex;
   flex-direction: column;
@@ -1197,6 +1203,7 @@ HEADER .header__nav {
     align-items: flex-end;
     flex-direction: row;
     gap: 0;
+    width: auto;
   }
 }
 

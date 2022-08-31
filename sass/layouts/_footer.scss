@@ -27,6 +27,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    align-items: baseline;
   }
 }
 
@@ -177,6 +178,7 @@
     align-items: flex-end;
     flex-direction: row;
     gap: 0;
+    width: auto;
   }
 }
 
